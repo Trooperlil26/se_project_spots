@@ -5,6 +5,8 @@
 }
 
 .profile__avatar {
+  height: 190;
+  width: 190px;
   margin-right: 20px;
 }
 
@@ -18,7 +20,7 @@
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: medium;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1;
   font-size: 32px;
 }
 
@@ -27,7 +29,7 @@
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: medium;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1;
   font-size: 16px;
 }
 
@@ -36,7 +38,7 @@
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: medium;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1;
   font-size: 16px;
 }
 
@@ -45,6 +47,40 @@
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: medium;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1;
   font-size: 16px;
+}
+
+@media screen and (max-width: 627px) {
+  .profile {
+    flex-direction: column;
+    max-width: 288px;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .profile__avatar {
+    margin: 0 0 12px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile__column {
+    margin: 0 0 20px;
+  }
+
+  .profile__name {
+    font-size: 20px;
+    margin: 0 0 6px;
+  }
+
+  .profile__description {
+    margin: 0 0 32px;
+  }
+
+  .profile__add-btn {
+    margin: 0;
+    width: 100%;
+  }
 }
