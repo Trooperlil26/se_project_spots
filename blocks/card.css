@@ -2,6 +2,18 @@
   max-width: 413px;
 }
 
+.card__title {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-style: medium;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 12px 0;
+}
+
 .card__image {
   height: 413px;
   width: 413px;

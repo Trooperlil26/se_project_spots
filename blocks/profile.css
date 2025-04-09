@@ -15,16 +15,36 @@
 
 .profile__name {
   margin: 0 0 12px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-style: medium;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 32px;
 }
 
 .profile__description {
   margin: 0;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-style: medium;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 16px;
 }
 
 .profile__edit-btn {
   margin-top: auto;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-style: medium;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 16px;
 }
 
 .profile__add-btn {
   margin-left: auto;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-style: medium;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 16px;
 }
