@@ -8,6 +8,7 @@
   height: 190;
   width: 190px;
   margin-right: 20px;
+  border-radius: 8px;
 }
 
 .profile__column {
@@ -28,6 +29,7 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
+  color: #212121;
 }
 
 .profile__description {
@@ -43,6 +45,7 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
+  color: rgba(33, 33, 33, 0.7);
 }
 
 .profile__edit-btn img {
@@ -63,6 +66,10 @@
   display: flex;
 }
 
+.profile__add-btn img {
+  margin-right: 8px;
+}
+
 .profile__add-btn {
   margin-left: auto;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -70,6 +77,13 @@
   font-weight: 500;
   line-height: 1;
   font-size: 16px;
+  width: 149px;
+  height: 52px;
+  padding: 0;
+  background-color: #212121;
+  color: #fcf5e5;
+  margin-top: 138px;
+  border-radius: 8px;
 }
 
 @media screen and (max-width: 627px) {
