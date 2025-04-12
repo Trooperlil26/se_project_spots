@@ -25,3 +25,9 @@ This site was creative to showcase, connect, and share your artistic profiles. T
 The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
 
 Good luck and have fun!
+
+**Video**
+
+https://drive.google.com/file/d/1bSTQ0b2LoDuIWSwIQcAZKWIw1HbALnBC/view?usp=sharing
+
+[text](https://drive.google.com/file/d/1bSTQ0b2LoDuIWSwIQcAZKWIw1HbALnBC/view?usp=sharing)
