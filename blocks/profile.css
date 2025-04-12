@@ -69,11 +69,14 @@
   cursor: pointer;
 }
 
-.profile__edit-button::before {
-  content: "pencil icon";
+.profile__edit-btn::before {
+  content: "";
   width: 16px;
   height: 16px;
-  background-image: url(../images/button-pencil.svg);
+  margin-right: 8px;
+  background-image: url(../images/edit.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .profile__add-btn img {
