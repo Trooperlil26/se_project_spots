@@ -70,10 +70,11 @@
 }
 
 .profile__edit-btn::before {
-  content: "Edit Profile";
+  content: "";
   width: 16px;
   height: 16px;
-  background-image: url(../images/edit.svg);
+  margin-right: 8px;
+  background-image: url(../images/pencil\ icon.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
