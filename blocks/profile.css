@@ -70,13 +70,13 @@
 }
 
 .profile__edit-btn::before {
-  content: "";
+  content: "Edit Profile";
   width: 16px;
   height: 16px;
-  margin-right: 8px;
   background-image: url(../images/edit.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .profile__add-btn img {
