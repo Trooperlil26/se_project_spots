@@ -80,10 +80,6 @@
   background-position: center;
 }
 
-.profile__add-btn img {
-  margin-right: 8px;
-}
-
 .profile__add-btn {
   margin-left: auto;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -104,6 +100,16 @@
 .profile__add-btn:hover {
   opacity: 0.8;
   cursor: pointer;
+}
+
+.profile__add-btn::before {
+  content: "";
+  width: 23px;
+  height: 20px;
+  background-image: url(../images/heart.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media screen and (max-width: 627px) {
