@@ -92,6 +92,10 @@
   margin-top: 138px;
   border-radius: 8px;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .profile__add-btn:hover {
@@ -101,9 +105,9 @@
 
 .profile__add-btn::before {
   content: "";
-  width: 23px;
-  height: 20px;
-  background-image: url(../images/heart.svg);
+  width: 12px;
+  height: 12px;
+  background-image: url(../images/add.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
