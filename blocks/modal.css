@@ -54,6 +54,11 @@
 
 .modal__label {
   margin: 0 0 32px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 110.00000000000001%;
+  color: rgba(33, 33, 33, 0.7);
 }
 
 .modal__form {
@@ -70,6 +75,11 @@
   box-sizing: border-box;
   border-radius: 8px;
   border: 1px solid rgba(33, 33, 33, 0.4);
+  padding-left: 12px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: rgba(33, 33, 33, 0.3);
 }
 
 .modal__input::placeholder {
@@ -84,6 +94,10 @@
   height: 52px;
   width: 100%;
   max-width: 156px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
 }
 
 @media screen {
