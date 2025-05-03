@@ -23,39 +23,49 @@ const addProfileCardImageInput =
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
 
-const ProfileCardImageEl = document.querySelector(".profile__image");
-const ProfileCardCaptionEl = document.querySelector(".profile__caption");
+const profileCaptionInput = document.querySelector(".caption__input");
+const profileCardImageInput = document.querySelector(".image__imput");
 
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
-  editProfileModal.classList.add("modal_is-opened");
+  openModal(editProfileModal);
 });
 
 editProfileCloseBtn.addEventListener("click", function () {
-  editProfileModal.classList.remove("modal_is-opened");
+  closeModal(editProfileModal);
 });
 
 addProfileBtn.addEventListener("click", function () {
-  addProfileModal.classList.add("modal_is-opened");
+  openModal(addProfileModal);
 });
 
 addProfileCloseBtn.addEventListener("click", function () {
-  addProfileModal.classList.remove("modal_is-opened");
+  closeModal(addProfileModal);
 });
+
+function openModal(modal) {
+  modal.classList.add("modal_is-opened");
+}
+
+function closeModal(modal) {
+  modal.classList.remove("modal_is-opened");
+}
 
 function handleEditProfileSubmit(evt) {
   evt.preventDefault();
   profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
-  editProfileModal.classList.remove("modal_is-opened");
+  closeModal(editProfileModal);
 }
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
-  addProfileModal.classList.remove("modal_is-opened");
+  closeModal(addProfileModal);
+  profileCaptionInput.textContent = addProfileCardCaptionInput.value;
+  profileCardImageInput.textContent = addProfileCardImageInput;
 }
 
 addProfileForm.addEventListener("submit", handleAddCardSubmit);
