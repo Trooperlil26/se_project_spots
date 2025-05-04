@@ -23,8 +23,8 @@ const addProfileCardImageInput =
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
 
-const profileCaptionInput = document.querySelector(".caption__input");
-const profileCardImageInput = document.querySelector(".image__imput");
+const profileCaptionInput = document.querySelector(".card-caption-input");
+const profileCardImageInput = document.querySelector(".card-image-imput");
 
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
