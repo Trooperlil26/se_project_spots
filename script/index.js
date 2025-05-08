@@ -23,9 +23,6 @@ const addProfileCardImageInput =
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
 
-const profileCaptionInput = document.querySelector(".card-caption-input");
-const profileCardImageInput = document.querySelector(".card-image-imput");
-
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
@@ -64,8 +61,8 @@ editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
   closeModal(addProfileModal);
-  profileCaptionInput.textContent = addProfileCardCaptionInput.value;
-  profileCardImageInput.textContent = addProfileCardImageInput;
+  console.log(addProfileCardCaptionInput.value);
+  console.log(addProfileCardImageInput.value);
 }
 
 addProfileForm.addEventListener("submit", handleAddCardSubmit);
