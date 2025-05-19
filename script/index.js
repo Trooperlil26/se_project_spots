@@ -50,6 +50,7 @@ const addProfileCardImageInput =
 const cardTemplate = document
   .querySelector("#card-template")
   .content.querySelector(".card");
+const cardsList = document.querySelector(".cards__list");
 
 function getCardElement(data) {
   const cardElement = cardTemplate.cloneNode(true);
@@ -57,6 +58,8 @@ function getCardElement(data) {
   const cardImageEl = cardElement.querySelector(".card__image");
 
   cardImageEl.src = data.link;
+  cardImageEl.alt = data.name;
+  cardTitleEl.textContent = data.name;
 
   return cardElement;
 }
@@ -109,5 +112,6 @@ function handleAddCardSubmit(evt) {
 addProfileForm.addEventListener("submit", handleAddCardSubmit);
 
 initialCards.forEach(function (item) {
-  console.log(getCardElement(item));
+  const cardElement = getCardElement(item);
+  cardsList.append(cardElement);
 });
