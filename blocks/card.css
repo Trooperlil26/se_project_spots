@@ -1,3 +1,7 @@
+.card {
+  position: relative;
+}
+
 .card__title {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 500;
@@ -8,6 +12,27 @@
   overflow: hidden;
   max-width: 350px;
   margin: 12px 0 0;
+}
+
+.card__delete-btn {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  background-image: url(../images/delete.svg);
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.card__delete-btn:hover {
+  cursor: pointer;
+  background-image: url(../images/red-delete.svg);
 }
 
 .card__image {
@@ -41,6 +66,15 @@
 .card__like-btn:hover {
   cursor: pointer;
   opacity: 100%;
+}
+
+.card__like-btn_active {
+  background-image: url(../images/love.svg);
+  opacity: 1;
+}
+
+.card__like-btn_active:hover {
+  opacity: 0.4;
 }
 
 @media screen and (max-width: 627px) {
