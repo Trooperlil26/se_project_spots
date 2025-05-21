@@ -105,8 +105,14 @@ editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
   closeModal(addProfileModal);
-  console.log(addProfileCardCaptionInput.value);
-  console.log(addProfileCardImageInput.value);
+
+  const inputValue = {
+    name: addProfileCardCaptionInput.value,
+    link: addProfileCardImageInput.value,
+  };
+
+  const cardElement = getCardElement(inputValue);
+  cardsList.prepend(cardElement);
 }
 
 addProfileForm.addEventListener("submit", handleAddCardSubmit);
