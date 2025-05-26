@@ -140,6 +140,8 @@
 
 .modal__caption {
   margin: 8px 0 0;
+  display: inline-block;
+  padding: 4px 8px;
   color: #fff;
   background-color: #212121;
   background-size: contain;
