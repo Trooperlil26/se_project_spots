@@ -58,6 +58,14 @@
 .modal__close-btn_type_preview {
   top: 0;
   right: -52.5px;
+  background-image: url(../images/white-close.svg);
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.modal__close-btn_type_preview:hover {
+  opacity: 40%;
+  cursor: pointer;
 }
 
 .modal__title {
