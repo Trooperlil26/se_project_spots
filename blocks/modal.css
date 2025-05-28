@@ -133,8 +133,6 @@
 
 .modal__image-container {
   position: relative;
-  max-width: 80vw;
-  max-height: 80vh;
 }
 
 .modal__image {
@@ -155,6 +153,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 8px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 320px) {
@@ -200,5 +199,9 @@
 
   .modal__image {
     max-width: unset;
+  }
+
+  .modal__caption {
+    font-size: 16px;
   }
 }

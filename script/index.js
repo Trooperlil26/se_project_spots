@@ -143,6 +143,8 @@ function handleAddCardSubmit(evt) {
 
   const cardElement = getCardElement(inputValue);
   cardsList.prepend(cardElement);
+  addProfileCardCaptionInput.value = "";
+  addProfileCardImageInput.value = "";
 }
 
 addProfileForm.addEventListener("submit", handleAddCardSubmit);
