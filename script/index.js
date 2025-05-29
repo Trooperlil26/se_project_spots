@@ -143,7 +143,7 @@ function handleAddCardSubmit(evt) {
 
   const cardElement = getCardElement(inputValue);
   cardsList.prepend(cardElement);
-  addProfileCardCaptionInput.value = "";
+  addProfileForm.reset();
   addProfileCardImageInput.value = "";
 }
 
