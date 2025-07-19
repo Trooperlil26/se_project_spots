@@ -1,3 +1,7 @@
+const checkInputValidity = (formEl, inputElement) => {
+  console.log(inputElement.validity);
+};
+
 const setEventListeners = (formEl) => {
   const inputList = Array.from(formEl.querySelectorAll(".modal__input"));
   const buttonElement = formEl.querySelector(".modal__submit-btn");
@@ -10,7 +14,7 @@ const setEventListeners = (formEl) => {
   inputList.forEach((inputElement) => {
     inputElement.addEventListener("input", function () {
       checkInputValidity(formEl, inputElement);
-      toggleButtonState(inputList, buttonElement);
+      //toggleButtonState(inputList, buttonElement);
     });
   });
 };
