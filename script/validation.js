@@ -1,6 +1,5 @@
 const showInputError = (formEl, inputEl, errorMsg) => {
-  const errorMsgID = inputEl.id + "-error";
-  const errorMsgEl = document.querySelector("#" + errorMsgID);
+  const errorMsgEl = document.querySelector(`#${inputEl.id}-error`);
   errorMsgEl.textContent = errorMsg;
 };
 
