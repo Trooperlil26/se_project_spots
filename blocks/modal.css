@@ -148,6 +148,11 @@
   background: rgba(0, 0, 0, 0.8);
 }
 
+.modal__submit-btn:disabled {
+  background-color: rgba(33, 33, 33, 1);
+  opacity: 50%;
+}
+
 .modal__image-container {
   position: relative;
 }
