@@ -44,6 +44,8 @@ const editProfileDescriptionInput = editProfileModal.querySelector(
 const addProfileBtn = document.querySelector(".profile__add-btn");
 const addProfileModal = document.querySelector("#new-post-modal");
 const addProfileCloseBtn = addProfileModal.querySelector(".modal__close-btn");
+const addProfileSubmitButton =
+  addProfileModal.querySelector(".modal__submit-btn");
 const addProfileForm = addProfileModal.querySelector(".modal__form");
 const addProfileCardCaptionInput = addProfileModal.querySelector(
   "#card-caption-input"
@@ -144,6 +146,7 @@ function handleAddCardSubmit(evt) {
   const cardElement = getCardElement(inputValue);
   cardsList.prepend(cardElement);
   addProfileForm.reset();
+  disableButton(addProfileSubmitButton);
   addProfileCardImageInput.value = "";
 }
 
