@@ -146,7 +146,7 @@ function handleAddCardSubmit(evt) {
   const cardElement = getCardElement(inputValue);
   cardsList.prepend(cardElement);
   addProfileForm.reset();
-  disableButton(addProfileSubmitButton);
+  disableButton(addProfileSubmitButton, settings);
   addProfileCardImageInput.value = "";
 }
 
