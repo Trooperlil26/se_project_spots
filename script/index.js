@@ -117,13 +117,29 @@ previewModalCloseBtn.addEventListener("click", function () {
   closeModal(previewModal);
 });
 
-function openModal(modal) {
-  modal.classList.add("modal_is-opened");
-}
+const handleEscClose = (evt) => {
+  if (evt.key === "Escape") {
+    closeModal(document.querySelector(".modal_is-opened"));
+  }
+};
 
-function closeModal(modal) {
+const handleOverlyClick = (evt) => {
+  if (evt.target === evt.currentTarget) {
+    closeModal(evt.currentTarget);
+  }
+};
+
+const openModal = (modal) => {
+  modal.classList.add("modal_is-opened");
+  document.addEventListener("keydown", handleEscClose);
+  modal.addEventListener("mousedown", handleOverlyClick);
+};
+
+const closeModal = (modal) => {
   modal.classList.remove("modal_is-opened");
-}
+  document.removeEventListener("keydown", handleEscClose);
+  modal.removeEventListener("mousedown", handleOverlyClick);
+};
 
 function handleEditProfileSubmit(evt) {
   evt.preventDefault();
