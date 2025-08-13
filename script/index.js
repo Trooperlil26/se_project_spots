@@ -96,10 +96,9 @@ const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
 
 editProfileBtn.addEventListener("click", function () {
+  resetFormValidation(editProfileForm, settings);
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
-
-  resetFormValidation(editProfileForm, settings);
 
   openModal(editProfileModal);
 });
